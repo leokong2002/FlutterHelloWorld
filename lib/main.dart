@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Welcome to Flutter'),
+          title: Text('Welcome to Flutter LEO你好'),
         ),
         body: ListView(
           children: [
@@ -29,6 +29,22 @@ class MyApp extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+          ],
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: 'Business',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.school),
+              label: 'School',
+            ),
           ],
         ),
       ),
@@ -94,10 +110,6 @@ Widget titleSection = Container(
     ],
   ),
 );
-
-//Color color = Colors.green;
-
-//Color color = Theme.of(context).primaryColor;
 
 Widget buttonSection = Container(
   child: Row(
